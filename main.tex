@@ -1,4 +1,4 @@
-﻿\documentclass[a4paper,11pt,oneside,openany]{jsbook}
+﻿\documentclass[a4paper,12pt,oneside,openany]{jsbook}
 \bibliographystyle{junsrt}
 
 %%%%%%%%%%%%%%%%%%%利用パッケージ一覧%%%%%%%%%%%%%%%%%%%
@@ -18,28 +18,37 @@
 \usepackage{booktabs} %for table
 \usepackage{float}
 \usepackage{multienum} %2段組
+\usepackage{url}       %url
+\usepackage[a4paper,truedimen]{geometry} %上下左右の余白調整
 %%%%%%%%%%%%%%%%%%%ドキュメントスタイル%%%%%%%%%%%%%%%%%%%%
 \setcounter{tocdepth}{2} %サブセクションまで目次に表示する
-\makeindex
+%\makeindex
 %
-\setlength{\textwidth}{\fullwidth}
-\setlength{\textheight}{41\baselineskip}
-\addtolength{\textheight}{\topskip}
-\setlength{\voffset}{-0.55in}
+\geometry{left=30mm, right=30mm, top=35mm, bottom=30mm}
+\renewcommand{\baselinestretch}{0.9} % 行間の調整
+\renewcommand\UrlFont{\rmfamily}     % urlフォントの変更
 
 %%%% ヘッダー・フッターの設定 %%%%
 \pagestyle{fancy}
-\lhead{\rightmark}
-\rfoot{\thepage}
+\lhead{}
+\rhead{\thepage}
 \cfoot{}
-\renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~#1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}}
-%\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0pt}
 
+%%%% サイトスタイルの設定 %%%%
+\makeatletter 
+\renewcommand{\@cite}[1]{\textsuperscript{\,[#1]}} 
+\makeatother
 
 %%%%%%%%%%%%%%%%%%ドキュメント開始%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \frontmatter
+%目次のカウント開始
+% 目次のページだけページ番号付けない方法
+% https://tex.stackexchange.com/questions/2995/removing-page-number-from-toc
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
 
 %目次のカウント開始
 \tableofcontents
