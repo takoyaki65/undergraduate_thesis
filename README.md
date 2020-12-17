@@ -1,11 +1,13 @@
 # master_thesis
 
-修士論文のテンプレートです。
-適当に使ってやってください。
+[https://github.com/apiss2/master_thesis_tmplete](https://github.com/apiss2/master_thesis_tmplete)
+を元に作成しました．apiss2さんありがとうございます．
+
+類，プログラムによってフォーマットが変わると思うので参考程度にして欲しいです．
 
 # OverLeafでの導入手順
 
-1. 卒論/修論テンプレートを入手
+1. 卒論テンプレートを入手
 
    このリポジトリからテンプレートを入手してください。
    この時、Download ZIPを選択 して適当なフォルダへ保存してください。
@@ -26,7 +28,7 @@
 
 4. プロジェクトの名前変更
 
-   出来上がったプロジェクトは、名前が"master_thesis_template_master"になっているかと思い ます。横のrename(名前の変更)ボタンからプロジェクトの名前を好きな名前に変更してくださ い。
+   出来上がったプロジェクトは、名前が"undergraduate_thesis_template_master"になっているかと思い ます。横のrename(名前の変更)ボタンからプロジェクトの名前を好きな名前に変更してくださ い。
    
    
 
