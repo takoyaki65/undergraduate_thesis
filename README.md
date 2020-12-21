@@ -1,4 +1,4 @@
-# master_thesis
+# undergraduate_thesis_template
 
 [https://github.com/apiss2/master_thesis_tmplete](https://github.com/apiss2/master_thesis_tmplete)
 を元に作成しました．apiss2さんありがとうございます．
