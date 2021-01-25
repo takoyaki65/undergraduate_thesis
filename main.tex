@@ -14,7 +14,11 @@
 \usepackage{makeidx}
 \usepackage{fancyhdr}
 \usepackage{layout}
-\usepackage[format=hang]{caption}  %`キャプションのスタイル用
+\usepackage[format=hang, % 複数行のキャプション用
+labelsep=space,          % 番号の後の空白
+figurename=Fig.\;,       % 図番号の書式
+tablename=Table.\;%      % 表番号の書式
+]{caption}  %`キャプションのスタイル用%`キャプションのスタイル用
 \usepackage[format=hang]{subcaption} % サブキャプションのスタイル用
 \usepackage{booktabs} %for table
 \usepackage{float}
